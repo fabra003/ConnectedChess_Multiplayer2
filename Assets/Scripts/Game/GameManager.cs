@@ -195,6 +195,8 @@ public class GameManager : MonoBehaviourSingleton<GameManager> {
 		// Signal that a move has been executed.
 		MoveExecutedEvent?.Invoke();
 
+		FindObjectOfType<TurnUIController>().SetTurnInfo(SideToMove.ToString());
+
 		return true;
 	}
 	
