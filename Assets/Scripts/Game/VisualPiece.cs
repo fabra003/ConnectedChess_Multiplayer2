@@ -109,7 +109,6 @@ public class VisualPiece : MonoBehaviour {
 				}
 			}
 
-			// Raise the VisualPieceMoved event with the initial square, the piece's transform, and the closest square transform.
 			VisualPieceMoved?.Invoke(CurrentSquare, thisTransform, closestSquareTransform);
 		}
 	}
